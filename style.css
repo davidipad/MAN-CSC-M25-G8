@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@400;700&display=swap");
 
 :root {
-  --primary-dark: #1a1a1a;
+  --primary-dark: #052128;
   --secondary-gray: #f5f5f5;
   --text-color: #333;
   --light-text-color: #e0e0e0;
-  --accent-color: #8b5cf6;
+  --accent-color: #095262;
+  --accent-light: #11a0bf;
   --card-shadow: rgba(0, 0, 0, 0.05);
   --transition-speed: 0.3s;
-  --adobe-black: #000000;
-  --adobe-blue: #4b61ff;
+  --banner-bg: #000000;
 }
 
 body {
@@ -24,12 +24,12 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Lora", serif;
+  font-family: Poppins, sans-serif;
   color: var(--primary-dark);
 }
 
 .bf-banner {
-  background-color: var(--adobe-black);
+  background-color: var(--banner-bg);
   color: #fff;
   padding: 14px 20px;
   display: flex;
@@ -66,12 +66,12 @@ h3 {
 }
 
 .bf-btn-primary {
-  background-color: var(--adobe-blue);
+  background-color: var(--accent-color);
   color: white;
 }
 
 .bf-btn-primary:hover {
-  background-color: #354bf0;
+  background-color: var(--accent-light);
 }
 
 .bf-btn-outline {
@@ -137,19 +137,19 @@ nav a::after {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--accent-color);
+  background-color: var(--accent-light);
   transform: scaleX(0);
   transition: transform var(--transition-speed) ease-in-out;
 }
 
 nav a:hover::after,
 nav a.active::after {
-  transform: scaleX(1);
+  transform: scaleX(0.5);
 }
 
 nav a:hover,
 nav a.active {
-  color: var(--accent-color);
+  color: var(--accent-light);
 }
 
 .menu-toggle {
@@ -173,6 +173,7 @@ nav a.active {
 }
 
 marquee {
+  display: block;
   background-color: var(--accent-color);
   color: #fff;
   padding: 8px 0;
@@ -188,18 +189,22 @@ footer {
 }
 
 .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://image.pollinations.ai/prompt/modern%20fashion%20atelier%20entrance,%20minimalist,%20high-end,%20sleek")
-      no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(assets/hero_img.jpg) no-repeat center center/cover;
   color: white;
   text-align: center;
-  padding: 140px 25px;
+  padding: 180px 25px;
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .hero-section h1 {
   font-size: 3em;
   color: white;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 600;
 }
 
 .hero-section p {
@@ -213,18 +218,40 @@ footer {
   color: #fff;
   padding: 15px 35px;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 1.1em;
-  font-weight: 600;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 500;
   border: none;
   cursor: pointer;
   transition: background-color var(--transition-speed) ease,
     transform var(--transition-speed) ease;
 }
 
+.cta-outline-button {
+  display: inline-block;
+  color: white;
+  padding: 13px 33px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 500;
+  border: 1.5px solid white;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease,
+    transform var(--transition-speed) ease;
+}
+
 .cta-button:hover {
-  background-color: #7a46e1;
+  background-color: var(--accent-light);
   transform: translateY(-3px);
+}
+
+.cta-outline-button:hover {
+  background-color: white;
+  border: 1.5px solid white;
+  transform: translateY(-3px);
+  color: var(--accent-color);
 }
 
 h1 {
@@ -503,6 +530,12 @@ h1 {
   justify-content: center;
 }
 
+.social__link img {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
 .footer__links {
   display: flex;
   flex-wrap: wrap;
@@ -554,6 +587,10 @@ h1 {
     flex-direction: column;
     text-align: center;
     gap: 10px;
+  }
+
+  .cta-button {
+    margin-bottom: 15px;
   }
 
   .hero-section h1 {
