@@ -7,53 +7,137 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="bf-banner">
+      <div class="bf-content">
+        <span class="bf-text"
+          ><strong>Black Friday ends soon.</strong> Save 50% for Black
+          Friday.</span
+        >
+        <div class="bf-buttons">
+          <a href="#" class="bf-btn bf-btn-primary">Save now</a>
+          <a href="#" class="bf-btn bf-btn-outline">See offers</a>
+        </div>
+      </div>
+    </div>
+
     <nav>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="trustees.html">Board of Trustees</a>
-      <a href="events.html">Upcoming Events</a>
-      <a href="contact.html">Inquiries & Appointments</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="trustees.html">Board of Trustees</a>
+        <a href="events.html">Upcoming Events</a>
+        <a href="contact.html">Inquiries & Appointments</a>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
 
     <marquee behavior="scroll" direction="left">
       Experience the MAN-CSC-M25-G8 Fall/Winter Showcase - October 20th in
-      Paris! | Explore our new Spring/Summer Collection!
+      Abuja! | Explore our new Spring/Summer Collection!
     </marquee>
 
     <main class="container">
       <h1>Upcoming Events</h1>
-      <section class="event-list">
-        <div class="card event-card">
-          <img
-            src="https://image.pollinations.ai/prompt/fashion%20show%20runway,%20modern"
-            alt="Fashion Show"
-          />
-          <h3>Codebrain Fashion Fall/Winter Showcase</h3>
-          <p><strong>Date:</strong> October 20, 2025</p>
-          <p><strong>Location:</strong> The Grand Exhibition Hall, Paris</p>
-          <button
-            class="details-button"
-            data-details="Join us for the unveiling of our most anticipated collection. Limited tickets available."
-          >
-            Learn More
-          </button>
+
+      <section class="event-grid">
+        <div class="event-card">
+          <div class="event-image-wrapper">
+            <div class="date-badge">
+              <span class="date-day">20</span>
+              <span class="date-month">OCT</span>
+            </div>
+            <img src="assets/event-runway.jpeg" alt="Fashion Runway" />
+          </div>
+          <div class="event-details-content">
+            <h3>Abuja Urban Runway</h3>
+            <div class="event-location">Transcorp Hilton, Abuja</div>
+            <p class="event-desc">
+              Witness the unveiling of our "Arewa Modern" collection. A night of
+              fusion between traditional textiles and contemporary cuts.
+            </p>
+            <button
+              class="details-button"
+              data-details="Tickets starting at ₦50,000. VIP Tables available. Doors open at 7 PM."
+            >
+              Reserve Seat
+            </button>
+          </div>
         </div>
-        <div class="card event-card">
-          <img
-            src="https://image.pollinations.ai/prompt/exclusive%20fashion%20party,%20elegant"
-            alt="VIP Night"
-          />
-          <h3>Exclusive VIP Preview Night</h3>
-          <p><strong>Date:</strong> November 5, 2025</p>
-          <p>
-            <strong>Location:</strong> Codebrain Fashion Flagship Store, Milan
-          </p>
-          <button
-            class="details-button"
-            data-details="An invitation-only evening for our most valued clients to get a first look at limited edition pieces."
-          >
-            Learn More
-          </button>
+
+        <div class="event-card">
+          <div class="event-image-wrapper">
+            <div class="date-badge">
+              <span class="date-day">05</span>
+              <span class="date-month">NOV</span>
+            </div>
+            <img src="assets/event-gala.jpeg" alt="VIP Gala" />
+          </div>
+          <div class="event-details-content">
+            <h3>Lagos Luxury Gala</h3>
+            <div class="event-location">Eko Hotels & Suites, VI, Lagos</div>
+            <p class="event-desc">
+              An exclusive black-tie evening celebrating African excellence in
+              fashion. Networking, fine dining, and live runway showcases.
+            </p>
+            <button
+              class="details-button"
+              data-details="Invitation only. Contact sales for corporate table inquiries."
+            >
+              Request Invite
+            </button>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-image-wrapper">
+            <div class="date-badge">
+              <span class="date-day">12</span>
+              <span class="date-month">DEC</span>
+            </div>
+            <img src="assets/event-exhibition.jpeg" alt="Fabric Exhibition" />
+          </div>
+          <div class="event-details-content">
+            <h3>Trad & Trends Exhibition</h3>
+            <div class="event-location">ICC, Abuja</div>
+            <p class="event-desc">
+              Explore the history of Aso-Oke and Ankara. A curated exhibition
+              featuring local artisans and our design team's mood boards.
+            </p>
+            <button
+              class="details-button"
+              data-details="Free entry for students. General Admission: ₦5,000."
+            >
+              Get Tickets
+            </button>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-image-wrapper">
+            <div class="date-badge">
+              <span class="date-day">15</span>
+              <span class="date-month">JAN</span>
+            </div>
+            <img src="assets/event-workshop.jpeg" alt="Design Workshop" />
+          </div>
+          <div class="event-details-content">
+            <h3>Afro-Fusion Masterclass</h3>
+            <div class="event-location">MAN-CSC-M25-G8 Studio, Maitama</div>
+            <p class="event-desc">
+              Learn the art of pattern making with our Lead Designer. A hands-on
+              workshop for aspiring fashion entrepreneurs.
+            </p>
+            <button
+              class="details-button"
+              data-details="Limited to 20 seats. Materials provided. Fee: ₦25,000."
+            >
+              Register Now
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -68,18 +152,18 @@
           <section class="social__links">
             <article class="social__link">
               <a href="https://www.facebook.com/" target="_blank">
-                <img src="/assets/facebook-logo.svg" alt="instagram-logo" />
+                <img src="assets/facebook-logo.svg" alt="facebook-logo" />
               </a>
             </article>
 
             <article class="social__link">
               <a href="https://www.instagram.com/" target="_blank">
-                <img src="/assets/instagram-logo.svg" alt="instagram-logo" />
+                <img src="assets/instagram-logo.svg" alt="instagram-logo" />
               </a>
             </article>
             <article class="social__link">
               <a href="https://www.x.com/" target="_blank">
-                <img src="/assets/x-logo.svg" alt="instagram-logo" />
+                <img src="assets/x-logo.svg" alt="x-logo" />
               </a>
             </article>
           </section>
@@ -90,13 +174,13 @@
             <h3 class="list__title">Explore</h3>
             <ul class="list">
               <li class="footer__list-item">
-                <a href="/index.html">About Us</a>
+                <a href="index.html">About Us</a>
               </li>
               <li class="footer__list-item">
-                <a href="/trustees.html">Board Of Trustees</a>
+                <a href="trustees.html">Board Of Trustees</a>
               </li>
               <li class="footer__list-item">
-                <a href="/events.html">Events</a>
+                <a href="events.html">Events</a>
               </li>
             </ul>
           </article>
@@ -106,13 +190,13 @@
 
             <ul class="list">
               <li class="footer__list-item">
-                <a href="/products.html">Ready-to-wear collections</a>
+                <a href="products.html">Ready-to-wear collections</a>
               </li>
               <li class="footer__list-item">
-                <a href="/contact.html">Tailoring</a>
+                <a href="contact.html">Tailoring</a>
               </li>
               <li class="footer__list-item">
-                <a href="/contact.html">Fashion Consulting</a>
+                <a href="contact.html">Fashion Consulting</a>
               </li>
               <li class="footer__list-item">
                 <a href="contact.html">Custom Design</a>
@@ -124,7 +208,7 @@
             <h3 class="list__title">Contact</h3>
             <ul class="list">
               <li class="footer__list-item">
-                <a href="/contact.html">Chat with sales</a>
+                <a href="contact.html">Chat with sales</a>
               </li>
             </ul>
           </article>

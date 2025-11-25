@@ -7,27 +7,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="trustees.html">Board of Trustees</a>
-      <a href="events.html">Upcoming Events</a>
-      <a href="contact.html">Inquiries & Appointments</a>
-    </nav>
+    <div class="bf-banner">
+      <div class="bf-content">
+        <span class="bf-text"
+          ><strong>Black Friday ends soon.</strong> Save 50% for Black
+          Friday.</span
+        >
+        <div class="bf-buttons">
+          <a href="#" class="bf-btn bf-btn-primary">Save now</a>
+          <a href="#" class="bf-btn bf-btn-outline">See offers</a>
+        </div>
+      </div>
+    </div>
 
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="trustees.html">Board of Trustees</a>
+        <a href="events.html">Upcoming Events</a>
+        <a href="contact.html">Inquiries & Appointments</a>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
     <marquee behavior="scroll" direction="left">
       Experience the MAN-CSC-M25-G8 Fall/Winter Showcase - October 20th in
-      Paris! | Explore our new Spring/Summer Collection!
+      Abuja! | Explore our new Spring/Summer Collection!
     </marquee>
 
     <main class="container">
       <h1>Our Collections</h1>
       <section class="product-grid">
         <div class="card">
-          <img
-            src="https://image.pollinations.ai/prompt/men's%20sleek%20suit,%20modern%20fashion"
-            alt="Men's Collection"
-          />
+          <img src="assets/suit.jpeg" alt="Men's Collection" />
           <h3>Men's Collection</h3>
           <p>Tailored elegance for the modern gentleman.</p>
           <button
@@ -38,10 +54,7 @@
           </button>
         </div>
         <div class="card">
-          <img
-            src="https://image.pollinations.ai/prompt/women's%20chic%20dress,%20high%20fashion"
-            alt="Women's Collection"
-          />
+          <img src="assets/dress.jpeg" alt="Women's Collection" />
           <h3>Women's Collection</h3>
           <p>Sophisticated designs for every occasion.</p>
           <button
@@ -52,15 +65,67 @@
           </button>
         </div>
         <div class="card">
-          <img
-            src="https://image.pollinations.ai/prompt/luxury%20accessories,%20fashion%20bag"
-            alt="Accessories"
-          />
+          <img src="assets/bag.jpeg" alt="Accessories" />
           <h3>Accessories</h3>
           <p>Curated accessories to complete your look.</p>
           <button
             class="details-button"
             data-details="Our accessories include handcrafted leather goods and statement jewelry."
+          >
+            View Details
+          </button>
+        </div>
+        <div class="card">
+          <img src="assets/sneakers.jpeg" alt="Footwear" />
+          <h3>Footwear</h3>
+          <p>Comfort meets high-end fashion in every step.</p>
+          <button
+            class="details-button"
+            data-details="Explore our range of italian leather shoes and designer sneakers."
+          >
+            View Details
+          </button>
+        </div>
+        <div class="card">
+          <img src="assets/hoodie.jpeg" alt="Urban Streetwear" />
+          <h3>Urban Hoodie</h3>
+          <p>Bold styles for the city wanderer.</p>
+          <button
+            class="details-button"
+            data-details="Our streetwear line combines oversized fits with artistic graphics."
+          >
+            View Details
+          </button>
+        </div>
+        <div class="card">
+          <img src="assets/perfume.jpeg" alt="Signature Fragrances" />
+          <h3>Signature Fragrances</h3>
+          <p>Scents that leave a lasting impression.</p>
+          <button
+            class="details-button"
+            data-details="Discover our exclusive blend of rare essences and botanical notes."
+          >
+            View Details
+          </button>
+        </div>
+        <div class="card">
+          <img src="assets/sunglasses.jpeg" alt="Eyewear" />
+          <h3>Designer Eyewear</h3>
+          <p>Shield your eyes in style.</p>
+          <button
+            class="details-button"
+            data-details="Premium polarized lenses with UV protection."
+          >
+            View Details
+          </button>
+        </div>
+        <div class="card">
+          <img src="assets/watch.jpeg" alt="Timepieces" />
+          <h3>Luxury Timepieces</h3>
+          <p>Precision and style on your wrist.</p>
+          <button
+            class="details-button"
+            data-details="Swiss movement watches with sapphire crystal glass."
           >
             View Details
           </button>
@@ -77,18 +142,18 @@
           <section class="social__links">
             <article class="social__link">
               <a href="https://www.facebook.com/" target="_blank">
-                <img src="/assets/facebook-logo.svg" alt="instagram-logo" />
+                <img src="assets/facebook-logo.svg" alt="facebook-logo" />
               </a>
             </article>
 
             <article class="social__link">
               <a href="https://www.instagram.com/" target="_blank">
-                <img src="/assets/instagram-logo.svg" alt="instagram-logo" />
+                <img src="assets/instagram-logo.svg" alt="instagram-logo" />
               </a>
             </article>
             <article class="social__link">
               <a href="https://www.x.com/" target="_blank">
-                <img src="/assets/x-logo.svg" alt="instagram-logo" />
+                <img src="assets/x-logo.svg" alt="x-logo" />
               </a>
             </article>
           </section>
@@ -99,13 +164,13 @@
             <h3 class="list__title">Explore</h3>
             <ul class="list">
               <li class="footer__list-item">
-                <a href="/index.html">About Us</a>
+                <a href="index.html">About Us</a>
               </li>
               <li class="footer__list-item">
-                <a href="/trustees.html">Board Of Trustees</a>
+                <a href="trustees.html">Board Of Trustees</a>
               </li>
               <li class="footer__list-item">
-                <a href="/events.html">Events</a>
+                <a href="events.html">Events</a>
               </li>
             </ul>
           </article>
@@ -115,13 +180,13 @@
 
             <ul class="list">
               <li class="footer__list-item">
-                <a href="/products.html">Ready-to-wear collections</a>
+                <a href="products.html">Ready-to-wear collections</a>
               </li>
               <li class="footer__list-item">
-                <a href="/contact.html">Tailoring</a>
+                <a href="contact.html">Tailoring</a>
               </li>
               <li class="footer__list-item">
-                <a href="/contact.html">Fashion Consulting</a>
+                <a href="contact.html">Fashion Consulting</a>
               </li>
               <li class="footer__list-item">
                 <a href="contact.html">Custom Design</a>
@@ -133,7 +198,7 @@
             <h3 class="list__title">Contact</h3>
             <ul class="list">
               <li class="footer__list-item">
-                <a href="/contact.html">Chat with sales</a>
+                <a href="contact.html">Chat with sales</a>
               </li>
             </ul>
           </article>
